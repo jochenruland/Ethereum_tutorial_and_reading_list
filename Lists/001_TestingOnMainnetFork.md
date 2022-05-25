@@ -1,20 +1,20 @@
-# Testing on mainnet fork with ganache-cli
+## Testing on mainnet fork with ganache-cli
 
-I. Install ganache client <br>
+### I. Install ganache client <br>
 `npm install ganache-cli` or
 `npm install -g ganache-cli` for global installation
 
-II. Get infura endpoint for mainnet <br>
+### II. Get infura endpoint for mainnet <br>
 `https://mainnet.infura.io/v3/{projectID}`
 
-III. Find an address with tokens you need <br>
+### III. Find an address with tokens you need <br>
 F.ex. ETH `0x4E48191DbCd0Ebe2415bae3e13C23e8E71f4dB76` <br>
 Or find the creating address of a token and unlock. This address will be able to mint new tokens
 
-IV. Fork mainnet and unlock account with tokens you need <br>
+### IV. Fork mainnet and unlock account with tokens you need <br>
 `ganache-cli --fork https://mainnet.infura.io/v3/{projectID} --unlock 0x4E48191DbCd0Ebe2415bae3e13C23e8E71f4dB76`
 
-V. Write the network fork into the truffle-config.js <br>
+### V. Write the network fork into the truffle-config.js <br>
 ```
     mainnetFork: {
       host: "127.0.0.1",     // Localhost (default: none)
