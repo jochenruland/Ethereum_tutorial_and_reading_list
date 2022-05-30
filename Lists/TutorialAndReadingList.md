@@ -9,16 +9,19 @@
 ### Testing
 - Testing on Rinkeby - Tutorial [here](https://www.geeksforgeeks.org/deploying-smart-contract-on-test-main-network-using-truffle/)
 - Testing on mainnet fork with ganache [here](https://blockheroes.dev/test-smart-contracts-on-mainnet/)
+- openzeppelin - Writing automated tests [here](https://docs.openzeppelin.com/learn/writing-automated-tests)
 - Openzeppelin - Connecting to public test networks [here](https://docs.openzeppelin.com/learn/connecting-to-public-test-networks)
 
 ### General stuff
 - EatTheBlocks(paying): great beginner tutorials - a lot of free stuff on youtube [here](https://eattheblocks.com/)
+- Openzeppelin - Overview of some very useful basics [here](https://docs.openzeppelin.com/)
 - Blockchain Academy Mittweida: solidity coding beginners to intermediate [here](https://blockchain-academy.hs-mittweida.de/courses/solidity-coding-beginners-to-intermediate/)
 - ethereum-blockchain-developer.com: advanced mini courses [here](https://ethereum-blockchain-developer.com/100-advanced-ethereum/)
 - The definitive guide for writing Ethereum smart contracts: general stuff & good DeFi, DEX, ERC20 tutorials [here](https://ethereumdev.io/)
 - Ethereumbuilders: focus on some special solidity features and techniques [here](https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_features.html)
 - Openzeppelin Ethernaut: blockchain development tutorial [here](https://ethernaut.openzeppelin.com/)
 - Dapp Learning DAO: documentation mainly in chinese, but still lots of great coding examples [here](https://github.com/Dapp-Learning-DAO/Dapp-Learning)
+- openzeppelin - Preparing for mainnet [here](https://docs.openzeppelin.com/learn/preparing-for-mainnet)
 
 ### DeFi
 - The developers guide to uniswap [here](https://blog.oceanprotocol.com/the-developers-guide-to-uniswap-48fcf6e9ee1e)
@@ -41,6 +44,7 @@
 
 
 ## Smart contract security
+- Ethereum Foundation - Overview of topics on smart contract security [here](https://ethereum.org/en/developers/docs/smart-contracts/security/)
 
 ## Useful tools
 ### Faucets
