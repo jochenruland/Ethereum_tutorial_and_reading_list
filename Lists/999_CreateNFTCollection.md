@@ -36,5 +36,8 @@ For further optional attributes cf. opensea metadata standard [here](https://doc
 Example of simple smart contract [here](./999_CreateNFTCollection_simple.sol) <br>
 A more sophisticated preset by openzeppelin can be found [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol)
 
+### Deploy contract and mint token
+Deploy to Rinkeby testnet or to mainnet
+
 ### Check on opensea under your account (the one who minted the NFT)
 Opensea on Rinkeby testnet `https://testnets.opensea.io/ `
