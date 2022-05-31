@@ -6,6 +6,18 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
+
+/**
+ * @dev - a simple {ERC721} token, including:
+ *
+ *  - {ERC721Enumerable} extension to request information about token quantities
+ *  - access control defining ownership
+ *
+ * The account that deploys the contract will be the owner; ownership can be
+ * transfered
+ */
+
+
 contract simpleERC721 is ERC721Enumerable, Ownable {
     using SafeMath for uint256;
 
@@ -25,7 +37,7 @@ contract simpleERC721 is ERC721Enumerable, Ownable {
         uint256 maxTokens,
         uint256 maxMints
     )
-    ERC721(name, symbol) 
+    ERC721(name, symbol)
     {
         setTokenPrice(tokenPrice);
         setMaxTokens(maxTokens);
