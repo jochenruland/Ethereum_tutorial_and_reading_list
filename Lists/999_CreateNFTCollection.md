@@ -27,15 +27,14 @@ For further optional attributes cf. opensea metadata standard [here](https://doc
 ` https://gateway.pinata.cloud/ipfs/{folder CID}/ ` -> last / is important!
 
 ### Create NFT smart contract - simple version
-Imports
+*Imports*
 1. ERC721.sol           -> Basic NFT Standard
 2. ERC721Enumerable.sol -> Extension to request information about # of NFTs
 3. Ownable.sol          -> Verify and change ownership
 4. SafeMath.sol         -> Library to avoid integer overflow
 
-Example of simple smart contract [here](./999_CreateNFTCollection_simple.sol)
-
-
+Example of simple smart contract [here](./999_CreateNFTCollection_simple.sol) <br>
+A more sophisticated preset by openzeppelin can be found [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol)
 
 ### Check on opensea under your account (the one who minted the NFT)
 Opensea on Rinkeby testnet `https://testnets.opensea.io/ `
