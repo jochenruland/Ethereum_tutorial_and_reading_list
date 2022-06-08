@@ -2,8 +2,8 @@
 - create a smart contract which contains the logic
 - use decentralized storage Pinata (IPFS) to store the metadata and assets that the smart contract points to.
 
-### [ ]Create the images and upload to Pinata (IPFS)  <br>
-- [ ] create the images with a name + rising counter
+### Create the images and upload to Pinata (IPFS)  <br>
+1. create the images with a name + rising counter
 2. put them into one folder
 3. upload folder to Pinata
 4. save CID (content identifier)
