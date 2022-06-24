@@ -38,6 +38,7 @@
 
 ## Smart contract design
 - REFACTORING GURU: refactoring, design patterns, SOLID principles, and other smart programming topics [here](https://refactoring.guru/)
+- All about interfaces - medium [here](https://medium.com/coinmonks/solidity-tutorial-all-about-interfaces-f547d2869499)
 - MVP Workshop - BLOG: Upgradable Smart Contracts, Proxy Pattern, IPFS and further advanced topics [here](https://mvpworkshop.co/blog/)
 - Proxy pattern - Upgradable Smart Contracts - basics [here](https://medium.com/coinmonks/proxy-pattern-and-upgradeable-smart-contracts-45d68d6f15da)
 - Proxy pattern - Upgradable Smart Contracts - basics [here](https://medium.com/@shub.sharma350/upgradability-patterns-in-solidity-part-1-13e23ce1f144)
