@@ -50,7 +50,7 @@ pragma solidity ^0.4.20;
 contract viaKeccak {
     function calculateKeccak() public pure returns (bytes4) {
         Solidity101 i;
-        return bytes4(keccak256('hello()') ^ keccak256('world(int'));
+        return bytes4(keccak256('hello()')) ^ bytes4(keccak256('world(int)'));
     }
 }
 ```
