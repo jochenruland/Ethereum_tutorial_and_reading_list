@@ -1,6 +1,6 @@
 ## Function selector and how to use them in call, staticcall or delegatecall
 
-### Function selector
+### I. Function selector
 `.selector` returns the ABI function selector
 cf. solidity docs
 
@@ -20,9 +20,7 @@ contract Sample {
     function getValue (uint _value) public pure returns (uint) {
         return _value;
     }
-
 }
-
 
 contract GetSelectors {
 
@@ -34,13 +32,13 @@ contract GetSelectors {
 
     // Returns same values as getSelector() by returning the bytes4 of keccak256()
     function getKeccakSeletor() public view returns (bytes4, bytes4) {
-      return bytes4(keccak256('foo()')), bytes4(keccak256('getBalance(address)'));
+        return bytes4(keccak256('foo()')), bytes4(keccak256('getBalance(address)'));
     }
 }
 
 ```
 
-### .call()
+### II. call()
 Solidity has the `call` function on address data type which can be used to call public and external functions on contracts.
 It can also be used to transfer ether to addresses. `call` is not recommended in most situations for contract function calls
 because it bypasses type checking, function existence check, and argument packing.
@@ -52,9 +50,10 @@ Fallback function is called when no function signature matches the call.
 
 `call` consumes less gas than calling the function on the contract instance. So in some cases call is preferred for gas optimisation.
 
-#### Calling another contracts function with .call()
+#### a) Calling another contracts function with .call()
 ```
 contract Sample {
+
   function sampleFunction(uint _x, address _addr) public returns(uint, uint) {
       // do something
       return (a, b);
@@ -81,7 +80,7 @@ contract CallSample {
 }
 
 ```
-#### Specify gas and transfer amount with .call()
+#### b) Specify gas and transfer amount with .call()
 ```
 contract CallSample {
   ...
@@ -96,7 +95,7 @@ contract CallSample {
 - If sending ether to the call method, `sampleFunction` must be a payable. Otherwise the call will fail
 - If the amount of gas supplied to call is less than required by `sampleFunction` to execute, the call will fail
 
-#### Sending ether using .call()
+#### c) Sending ether using .call()
 - After the Istanbul hardfork send and transfer methods have been deprecated
 - If transfer is used inside a function call of a contract a fixed gas of 2300 is supplied to the transfer method. Since gas cost is subjected to change the fixed gas cost might not be enough to successfully transfer the ether and the overall function call might fail.
 - Sending ether using .call() the receive function is called provided msg.data is empty. If the receive function is not implemented then the fallback function is called.
@@ -104,12 +103,13 @@ contract CallSample {
 - Reentrancy can be solved by using a reentrancy guard.
 ```
 function paySomeone(address _addr) public payable nonReentrant {
+
     (bool success, ) = _addr.call{value: msg.value}("");
     // do something
 }
 ```
 
-### Staticcall
+### III. Staticcall
 `address.staticall()` Works in the same way as `address.call()` but can only be used for pure, view and constant functions which do not change state.
 It will revert if the target function changes any state variable.
 
@@ -128,11 +128,12 @@ function callGetValue(uint _x) public view returns (uint) {
 }
 ```
 
-### Delegatecall
+### IV. Delegatecall
 `delegatecall` is used to call a function of contract B from contract A with contract A’s storage, balance and address supplied to the function.
-`delegatecall` uses the same syntax as call except that it cannot accept the value option but only gas.
+It uses the same syntax as call except that it cannot accept the value option but only gas.
 
-The following are extracts of the article [Understanding delegatecall And How to Use It Safely, Nick Mudge, Jul 24, 2021](https://eip2535diamonds.substack.com/p/understanding-delegatecall-and-how)
+#### A) General
+*The following are extracts of the article [Understanding delegatecall And How to Use It Safely, Nick Mudge, Jul 24, 2021](https://eip2535diamonds.substack.com/p/understanding-delegatecall-and-how)*
 
 When a contract makes a function call using delegatecall it loads the function code from another contract and executes it as if it were its own code.
 delegatecall is used to call a function of contract B from contract A with contract A’s storage, balance and address supplied to the function
@@ -144,7 +145,7 @@ When a function is executed with delegatecall these values do not change:
 
 Reads and writes to state variables happen to the contract that loads and executes functions with delegatecall. Reads and writes never happen to the contract that holds functions that are retrieved
 
-#### How To Use delegatecall Safely
+#### B) How To Use delegatecall Safely
 Now that you understand how delegatecall works let’s look at how to use it safely.
 
 ##### 1. Control what is executed with delegatecall
@@ -156,6 +157,7 @@ Delegatecall will return ‘True’ for the status value if it is called on an a
 If you are unsure if an address variable will always hold an address that has code and delegatecall is used on it then check that any address from the variable has code before using delegatecall on it and revert if it doesn’t have code. Here is an example of code that checks if an address has code:
 ```
 function isContract(address account) internal view returns (bool) {
+
   uint256 size;
   assembly {size := extcodesize(account)}
   return size > 0;
@@ -176,7 +178,7 @@ For example let’s say that a ContractA declares state variables ‘uint first;
 Managing the state variable layout of contracts that call functions with delegatecall and the contracts that are executed with delegatecall is not hard to do in practice when a strategy is used to do it. Here are some known strategies that have been used successfully in production
 
 
-#### Using initialize() function instead of constructor()
+#### C) Using initialize() function instead of constructor()
 The purpose of the initializer (as well as the constructor) is to be called as the first function before using the contract, and never be called back a second time
 However, initialize is used instead of the constructor when a contract that uses a proxy is published
 
