@@ -48,6 +48,7 @@
 
 ## Smart contract security
 - Ethereum Foundation - Overview of topics on smart contract security [here](https://ethereum.org/en/developers/docs/smart-contracts/security/)
+- Understanding delegatecall [here](https://eip2535diamonds.substack.com/p/understanding-delegatecall-and-how)
 
 ## Useful tools
 ### Faucets
