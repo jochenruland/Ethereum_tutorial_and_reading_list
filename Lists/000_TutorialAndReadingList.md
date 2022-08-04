@@ -36,6 +36,9 @@
 - Lauching an NFT collection from scratch and show on opensea.io [here](https://medium.com/@ultrasoundchad/launching-an-nft-from-scratch-9d0502f5fef9)
 - Fullstack NFT marketplace tutorial on polygon [here](https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb)
 
+### IPFS
+- Great tutorial on IPFS how decentralized storage works [here](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/)
+
 ## Smart contract design
 - REFACTORING GURU: refactoring, design patterns, SOLID principles, and other smart programming topics [here](https://refactoring.guru/)
 - All about interfaces - medium [here](https://medium.com/coinmonks/solidity-tutorial-all-about-interfaces-f547d2869499)
