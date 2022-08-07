@@ -37,7 +37,8 @@
 - Fullstack NFT marketplace tutorial on polygon [here](https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb)
 
 ### IPFS
-- Great tutorial on IPFS how decentralized storage works [here](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/)
+- Great tutorial on IPFS explaining how decentralized storage works [here](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/)
+- This blogpost explains how to use IPFS in your DApp [here](https://soliditydeveloper.com/ipfs)
 
 ## Smart contract design
 - REFACTORING GURU: refactoring, design patterns, SOLID principles, and other smart programming topics [here](https://refactoring.guru/)
