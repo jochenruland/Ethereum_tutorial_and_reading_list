@@ -12,14 +12,15 @@ F.ex. ETH `0x4E48191DbCd0Ebe2415bae3e13C23e8E71f4dB76` <br>
 Or find the creating address of a token and unlock. This address will be able to mint new tokens
 
 ### - Fork mainnet and unlock account with tokens you need <br>
-```ganache-cli --fork https://mainnet.infura.io/v3/{projectID} -p 7545 -i 999 -m "12 word mnemonic" -u 0x55e4d16f9c3041EfF17Ca32850662f3e9Dddbce7 0xb5b06a16621616875A6C2637948bF98eA57c58fa 0x9759A6Ac90977b93B58547b4A71c78317f391A28``` <br>
+```ganache-cli --fork https://mainnet.infura.io/v3/{projectID} -p 7545 -i 999 --chainId 1338 -m "12 word mnemonic" -u 0x55e4d16f9c3041EfF17Ca32850662f3e9Dddbce7 0xb5b06a16621616875A6C2637948bF98eA57c58fa 0x9759A6Ac90977b93B58547b4A71c78317f391A28``` <br>
  <br>
 Many options available. cf. `ganache-cli --fork --help` <br>
  <br>
 `-p` Port <br>
 `-i` network_id <br>
 `-m` mnemonic - using the same mnemonic will always create the same accounts which avoids new account imports to metamask in case of restarting the mainnet fork <br>
-`-u` unlock account addresses (here for ether and Dai)
+`-u` unlock account addresses (here for ether and Dai) <br>
+`--chainId` define chainId - can be any number except 1337
 
 ### - Import one or more of the accounts to metamask
 
