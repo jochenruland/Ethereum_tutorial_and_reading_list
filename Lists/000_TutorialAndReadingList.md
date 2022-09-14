@@ -40,6 +40,7 @@
 - Great tutorial on IPFS explaining how decentralized storage works [here](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/)
 - This blogpost explains how to create a simple react app uploading files to ipfs [here](https://dev.to/edge-and-node/uploading-files-to-ipfs-from-a-web-application-50a)
 - This blogpost explains how to use IPFS in your DApp and register the upload path on the blockchain [here](https://soliditydeveloper.com/ipfs)
+- The latest version of ipfs is ESM only - you cannot load module via require - cf. [here](https://github.com/ipfs/js-ipfs/blob/master/docs/upgrading/v0.62-v0.63.md#esm)
 
 ## Smart contract design
 - REFACTORING GURU: refactoring, design patterns, SOLID principles, and other smart programming topics [here](https://refactoring.guru/)
