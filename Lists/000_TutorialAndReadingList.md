@@ -35,6 +35,7 @@
 - Creating your NFT from scratch and list it on opensea.io [here](https://medium.com/gft-engineering/creating-your-own-nft-from-scratch-and-listing-it-on-opensea-8ac296cf1019)
 - Lauching an NFT collection from scratch and show on opensea.io [here](https://medium.com/@ultrasoundchad/launching-an-nft-from-scratch-9d0502f5fef9)
 - Fullstack NFT marketplace tutorial on polygon [here](https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb)
+- Great example of a professional NFT implementation form BoredApeYachtClub [here](https://etherscan.io/address/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d#code) 
 
 ### IPFS
 - Great tutorial on IPFS explaining how decentralized storage works [here](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/)
